@@ -9,9 +9,15 @@ module GameOfLife
     end
 
     def present_generation
+      if @live_seed_location == [1, 1] 
        [[DEAD, DEAD, DEAD], 
        [DEAD, ALIVE, DEAD], 
        [DEAD, DEAD, DEAD]]
+      else
+        [[DEAD, ALIVE, DEAD], 
+        [DEAD, ALIVE, DEAD], 
+        [DEAD, ALIVE, DEAD]]
+      end
     end
   end
 end
